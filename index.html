@@ -58,6 +58,36 @@
   color: #393939;
   margin-top: 0.5rem;
 }
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0d1117; /* Near-black */
+  border-bottom: 1px solid #39a79e; /* Azure Teal border */
+}
+
+.logo {
+  color: #f9f9f9; /* Soft white */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  color: #39a79e; /* Azure Teal */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: #f9f9f9; /* Highlights on hover */
+}
  
     .privacy-link {
       display: inline-block;
@@ -83,6 +113,13 @@
   </style>
 </head>
 <body>
+  <nav class="navbar">
+  <div class="logo">PandaPaus</div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="contact.html" class="nav-item">Contact</a>
+  </div>
+</nav>
   <main>
     <h1>PandaPaus</h1>
     <p class="subtitle">contact@pandapaus.com</p>
