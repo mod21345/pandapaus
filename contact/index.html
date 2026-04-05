@@ -1,16 +1,122 @@
-<nav class="navbar">
-  <div class="logo" style="color:#f9f9f9; font-size:1.5rem;">PandaPaus</div>
-  <div class="nav-links">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="contact.html" class="nav-item">Contact</a>
-  </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | PandaPaus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal:       #39a79e;
+      --dark-bg:    #0d1117;
+      --soft-white: #f9f9f9;
+      --text-gray:  #393939;
+    }
 
-<main style="padding: 40px 20px; text-align: center;">
-  <h1 style="color: #f9f9f9;">Contact Us</h1>
-  
-  <!-- The wrapper ensures the form is centered and readable -->
-  <div style="max-width: 800px; margin: 0 auto; background: #f9f9f9; border-radius: 12px; overflow: hidden;">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8taGM9TwXnIxT1uelv5pjD0VlSHoZywNZeSpF_I3-bGJGuQ/viewform?embedded=true" width="640" height="691" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </div>
-</main>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Figtree', sans-serif;
+      background: var(--soft-white);
+      color: var(--text-gray);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar CSS (Copied from Home Page for consistency) */
+    .navbar {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8%;
+      background-color: var(--teal);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: var(--soft-white);
+      font-weight: 400;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-item {
+      color: var(--soft-white);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+
+    .nav-item:hover { opacity: 1; }
+
+    main {
+      flex: 1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      color: var(--teal); /* Fixed: Now Azure Teal so it's visible */
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      font-weight: 800;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Adds a soft professional shadow */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="/" class="logo">PandaPaus</a>
+    <div class="nav-links">
+      <a href="/" class="nav-item">Home</a>
+      <a href="/contact/" class="nav-item">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Contact Us</h1>
+    
+    <div class="form-container">
+      <!-- Height is increased to 950 to ensure the whole form shows without scrolling -->
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSd8taGM9TwXnIxT1uelv5pjD0VlSHoZywNZeSpF_I3-bGJGuQ/viewform?embedded=true" 
+        width="100%" 
+        height="950" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        Loading…
+      </iframe>
+    </div>
+  </main>
+
+  <footer style="padding: 2rem; text-align: center; color: #9a9a9a; font-size: 0.8rem;">
+    &copy; 2026 PandaPaus
+  </footer>
+
+</body>
+</html>
