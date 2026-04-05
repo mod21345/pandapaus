@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PandaPaus | Digital Wellbeing</title>
+  <title>PandaPaus</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet" />
@@ -29,44 +29,47 @@
     }
 
     /* Navigation Bar */
-    .navbar {
-      width: 100%;
-      height: 80px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 8%;
-      background-color: var(--dark-bg);
-      border-bottom: 2px solid var(--teal);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+    /* Navigation Bar - Updated to Azure Teal */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  background-color: var(--teal); /* Azure Teal Background */
+  border-bottom: none; /* No border needed since it's a solid brand block */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    .logo {
-      color: var(--soft-white);
-      font-weight: 800;
-      font-size: 1.6rem;
-      letter-spacing: -0.03em;
-      text-decoration: none;
-    }
+.logo {
+  color: var(--soft-white);
+  font-weight: 400; /* Removed bold */
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
 
-    .nav-item {
-      color: var(--teal);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.2s ease;
-    }
+.nav-item {
+  color: var(--soft-white); /* Soft White text */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
 
-    .nav-item:hover {
-      color: var(--soft-white);
-    }
+.nav-item:hover {
+  opacity: 1; /* Subtle hover effect instead of color change */
+  text-decoration: underline; /* Optional: adds a nice "active" feel */
+}
 
     /* Main Content Area */
     main {
