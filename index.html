@@ -11,28 +11,72 @@
     :root {
       --teal:       #39a79e;
       --bg:         #f9f9f9;
+      --dark-bg:    #0d1117;
       --text:       #393939;
       --text-light: #9a9a9a;
+      --white:      #f9f9f9;
     }
- 
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
     body {
       font-family: 'Figtree', sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
       display: flex;
+      flex-direction: column; /* This allows the navbar to stay at the top */
+    }
+
+    /* --- Navbar Styling --- */
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background-color: var(--dark-bg);
+      border-bottom: 2px solid var(--teal);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-item {
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover {
+      color: var(--white);
+    }
+
+    /* --- Content Styling --- */
+    main {
+      flex: 1; /* Pushes footer down */
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
- 
-    main {
       text-align: center;
       padding: 2rem;
     }
- 
+
     h1 {
       font-size: clamp(3rem, 12vw, 7rem);
       font-weight: 800;
@@ -44,69 +88,22 @@
       animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
     }
 
-    footer {
-  position: fixed;
-  bottom: 1.5rem;
-  width: 100%;
-  text-align: center;
-  font-size: 0.78rem;
-  color: #393939;
-}
-
     .subtitle {
-  font-size: 1rem;
-  color: #393939;
-  margin-top: 0.5rem;
-}
-    .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #0d1117; /* Near-black */
-  border-bottom: 1px solid #39a79e; /* Azure Teal border */
-}
-
-.logo {
-  color: #f9f9f9; /* Soft white */
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-item {
-  color: #39a79e; /* Azure Teal */
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav-item:hover {
-  color: #f9f9f9; /* Highlights on hover */
-}
- 
-    .privacy-link {
-      display: inline-block;
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-light);
-      text-decoration: none;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-top: 1rem;
       opacity: 0;
-      animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.45s forwards;
-      transition: color 0.2s;
+      animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
     }
- 
-    .privacy-link:hover {
-      color: var(--teal);
+
+    footer {
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-light);
     }
- 
+
     @keyframes fadeUp {
       to { opacity: 1; transform: translateY(0); }
     }
@@ -114,16 +111,18 @@
 </head>
 <body>
   <nav class="navbar">
-  <div class="logo">PandaPaus</div>
-  <div class="nav-links">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="contact" class="nav-item">Contact</a>
-  </div>
-</nav>
+    <div class="logo">PandaPaus</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </div>
+  </nav>
+
   <main>
     <h1>PandaPaus</h1>
-    <p class="subtitle">contact@pandapaus.com</p>
+    <p class="subtitle">Focus. Regulate. Pause.</p>
   </main> 
+
   <footer>© 2026 PandaPaus</footer>
 </body>
 </html>
