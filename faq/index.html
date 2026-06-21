@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandaPaus FAQ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #111;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #222;
+            margin-top: 40px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: #444;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eaeaea;
+            margin: 40px 0;
+        }
+        .contact-box {
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-box a {
+            color: #0070f3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PandaPaus FAQ</h1>
+
+    <section id="getting-started">
+        <h2>Getting Started</h2>
+        
+        <h3>How does PandaPaus actually work?</h3>
+        <p>You pick the apps you want to spend less time on, then set two limits per app:</p>
+        <ul>
+            <li><strong>Daily Opens</strong> - how many times you can open that app per day</li>
+            <li><strong>Session Minutes</strong> - how long a single session can last before a shield steps in</li>
+        </ul>
+        <p>Once you hit either limit, PandaPaus shields the app so you have to consciously choose to continue.</p>
+
+        <h3>How is "Session Minutes" actually measured?</h3>
+        <p>Session time only counts while the app is <strong>in the foreground - literally on your screen.</strong> If you background the app (switch to another app, lock your phone, etc.), the timer pauses. It only resumes counting once the app is back in the foreground. So a 5-minute session limit means 5 <em>active</em> minutes looking at the app, not 5 minutes of wall-clock time since you opened it.</p>
+    </section>
+
+    <section id="streaks">
+        <h2>🔥 Streaks</h2>
+        
+        <h3>Is my streak per-app or one streak for everything?</h3>
+        <p><strong>One collective streak across all your shielded apps.</strong> Every app you've added to PandaPaus has to stay under its daily open limit for the streak to continue. If even one app goes over its limit for the day, the streak resets - it's not tracked separately per app.</p>
+
+        <h3>What actually breaks my streak?</h3>
+        <p>Two things can break it:</p>
+        <ul>
+            <li><strong>Going over your daily open limit on any shielded app.</strong> The moment you tap into an app after you've already used up your allowed opens for the day, the streak resets to 0 immediately.</li>
+            <li><strong>Not feeding the helpers within 24 hours</strong> (see the Apples section below). If your guards go unfed for more than a day, the streak resets even if you didn't technically "overuse" any app.</li>
+        </ul>
+
+        <h3>When does my streak count actually go up?</h3>
+        <p>At midnight, PandaPaus checks whether every shielded app stayed at or under its daily limit for the day. If so, your streak increases by one. This happens automatically - you don't need to do anything except stay under your limits.</p>
+
+        <h3>I broke my streak by accident - can I get it back?</h3>
+        <p>Right now, streaks reset to 0 once broken and can't be manually restored. Treat it as a fresh start the next day.</p>
+    </section>
+
+    <section id="apples-feeding">
+        <h2>🍎 Apples &amp; Feeding</h2>
+        
+        <h3>Why do I need to "feed" the helpers? Don't my limits already protect me?</h3>
+        <p>Feeding is what keeps the guards <em>active</em>. Your limits define how strict the guard is, but the guards need to be "powered" daily by apples. Apples keep our little ecosystem happy. Your helpers work hard to guard your time, and in return, they just need a little daily fuel. Everyone gets exactly what they need: you get your focus back, and the guards get their favorite treat to stay powered up!</p>
+
+        <h3>How many apples does it cost per day?</h3>
+        <p><strong>2 apples per shielded app, per day.</strong> So if you have 3 apps shielded, feeding costs 6 apples that day. The cost scales with how many apps you're guarding.</p>
+
+        <h3>What happens if I don't have enough apples to feed?</h3>
+        <p>If you can't feed (or forget to), the affected shields go into an "out of energy" state. You'll see a notice on the shield letting you know guards are inactive until you feed them. You can still get one pass through to access the app, but the guard doesn't go away - it's just temporarily unable to enforce the block until apples are restored.</p>
+
+        <h3>What happens if I go too long without feeding?</h3>
+        <p>If you go more than <strong>24 hours without feeding</strong>, your streak resets to 0 - even if you didn't technically break any individual app limit.</p>
+
+        <h3>How do I get more apples?</h3>
+        <ul>
+            <li><strong>Watch a short ad</strong> to earn an apple (limited number of ad-apples available in a rolling time window - check the in-app "Get More Apples" screen for the current limit and cooldown)</li>
+            <li><strong>Hit streak milestones</strong> (e.g., 7, 14, 21+ day streaks) to earn bonus apples automatically</li>
+            <li><strong>Subscribe to Premium</strong> for unlimited apples - helpers feed themselves automatically and you never have to think about this again</li>
+        </ul>
+
+        <h3>If I delete an app intention and re-add it, can I skip feeding apples for the guard for that day?</h3>
+        <p>No - re-adding a shield treats it as a brand-new, unfed app. Feeding is tracked per app, not globally, so removing and re-adding doesn't let you dodge the daily apple cost.</p>
+
+        <h3>Does Premium change any of this?</h3>
+        <p>Yes - with Premium, apples are unlimited and feeding happens automatically every day. You'll never see the "out of energy" shield state, and you don't need to think about the apple economy at all.</p>
+    </section>
+
+    <section id="guard-tones">
+        <h2>Guard Tones</h2>
+        
+        <h3>What are "Guard Tones"?</h3>
+        <p>These control the personality/voice of the messages your guards show you when you're approaching or hitting a limit - Classic, Sassy, Guilt Trip, Deadpan, Zen, and Hype Coach. Some tones are Premium-only. You can change your tone anytime in <strong>Settings &rarr; Preferences</strong>.</p>
+    </section>
+
+    <section id="troubleshooting">
+        <h2>🛠️ Troubleshooting</h2>
+        
+        <h3>My shield isn't showing up / isn't blocking the app.</h3>
+        <p>A few things to check:</p>
+        <ul>
+            <li>Make sure Screen Time permissions are still granted to PandaPaus (Settings app &rarr; Screen Time &rarr; see if PandaPaus has access)</li>
+            <li>Confirm there isn't a conflicting native iOS Screen Time limit on the same app (see "Getting Started" above)</li>
+            <li>Make sure the app is actually fed for today - an unfed app's shield behaves differently than a fed one</li>
+            <li>Try force-closing and reopening PandaPaus once to resync</li>
+        </ul>
+
+        <h3>I changed my Daily Opens or Session Minutes but the old limit still seems active.</h3>
+        <p>Limit changes take effect the moment you tap <strong>Activate Shield</strong> in the app's edit screen. If it still looks off, fully close the target app (not just background it) and reopen it once - this forces the shield to re-read your latest settings.</p>
+
+        <h3>Why does the shield sometimes show a generic message instead of my custom one?</h3>
+        <p>This can briefly happen right after adding a brand-new shield, while the system finishes linking that specific app to your settings. It should resolve within a few seconds to a minute of normal use. If it persists, try the troubleshooting steps above.</p>
+
+        <h3>I'm not getting the 30-second warning before my session ends.</h3>
+        <p>Make sure Notifications are enabled for PandaPaus in <strong>Settings &rarr; Preferences &rarr; Notifications</strong>, and that iOS Notification permissions are granted (Settings app &rarr; Notifications &rarr; PandaPaus).</p>
+    </section>
+
+    <div class="contact-box">
+        <h3>Still have a question?</h3>
+        <p>Reach out to us at <a href="mailto:contact@pandapaus.com">contact@pandapaus.com</a>.</p>
+    </div>
+
+</body>
+</html>
