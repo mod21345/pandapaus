@@ -78,23 +78,20 @@
     <section id="getting-started">
         <h2>Getting Started</h2>
         
-        <h3>How does PandaPaus actually work?</h3>
+        <h3>How does PandaPaus work?</h3>
         <p>You pick the apps you want to spend less time on, then set two limits per app:</p>
         <ul>
             <li><strong>Daily Opens</strong> - how many times you can open that app per day</li>
             <li><strong>Session Minutes</strong> - how long a single session can last before a shield steps in</li>
         </ul>
         <p>Once you hit either limit, PandaPaus shields the app so you have to consciously choose to continue.</p>
-
-        <h3>How is "Session Minutes" actually measured?</h3>
-        <p>Session time only counts while the app is <strong>in the foreground - literally on your screen.</strong> If you background the app (switch to another app, lock your phone, etc.), the timer pauses. It only resumes counting once the app is back in the foreground. So a 5-minute session limit means 5 <em>active</em> minutes looking at the app, not 5 minutes of wall-clock time since you opened it.</p>
     </section>
 
     <section id="streaks">
         <h2>🔥 Streaks</h2>
         
         <h3>Is my streak per-app or one streak for everything?</h3>
-        <p><strong>One collective streak across all your shielded apps.</strong> Every app you've added to PandaPaus has to stay under its daily open limit for the streak to continue. If even one app goes over its limit for the day, the streak resets - it's not tracked separately per app.</p>
+        <p>One collective streak across all your shielded apps. Every app you've added to PandaPaus has to stay under its daily open limit for the streak to continue. If even one app goes over its limit for the day, the streak resets - it's not tracked separately per app.</p>
 
         <h3>What actually breaks my streak?</h3>
         <p>Two things can break it:</p>
@@ -102,33 +99,27 @@
             <li><strong>Going over your daily open limit on any shielded app.</strong> The moment you tap into an app after you've already used up your allowed opens for the day, the streak resets to 0 immediately.</li>
             <li><strong>Not feeding the helpers within 24 hours</strong> (see the Apples section below). If your guards go unfed for more than a day, the streak resets even if you didn't technically "overuse" any app.</li>
         </ul>
-
-        <h3>When does my streak count actually go up?</h3>
-        <p>At midnight, PandaPaus checks whether every shielded app stayed at or under its daily limit for the day. If so, your streak increases by one. This happens automatically - you don't need to do anything except stay under your limits.</p>
-
-        <h3>I broke my streak by accident - can I get it back?</h3>
-        <p>Right now, streaks reset to 0 once broken and can't be manually restored. Treat it as a fresh start the next day.</p>
     </section>
 
     <section id="apples-feeding">
         <h2>🍎 Apples &amp; Feeding</h2>
         
         <h3>Why do I need to "feed" the helpers? Don't my limits already protect me?</h3>
-        <p>Feeding is what keeps the guards <em>active</em>. Your limits define how strict the guard is, but the guards need to be "powered" daily by apples. Apples keep our little ecosystem happy. Your helpers work hard to guard your time, and in return, they just need a little daily fuel. Everyone gets exactly what they need: you get your focus back, and the guards get their favorite treat to stay powered up!</p>
+        <p>Feeding is what keeps the guards active. Your limits define how strict the guard is, but the guards need to be "powered" daily by apples. Apples keep our little ecosystem happy. Your helpers work hard to guard your time, and in return, they just need a little daily fuel. Everyone gets exactly what they need: you get your focus back, and the guards get their favorite treat to stay powered up!</p>
 
         <h3>How many apples does it cost per day?</h3>
-        <p><strong>2 apples per shielded app, per day.</strong> So if you have 3 apps shielded, feeding costs 6 apples that day. The cost scales with how many apps you're guarding.</p>
+        <p>2 apples per shielded app, per day. So if you have 3 apps shielded, feeding costs 6 apples that day. The cost scales with how many apps you're guarding.</p>
 
         <h3>What happens if I don't have enough apples to feed?</h3>
         <p>If you can't feed (or forget to), the affected shields go into an "out of energy" state. You'll see a notice on the shield letting you know guards are inactive until you feed them. You can still get one pass through to access the app, but the guard doesn't go away - it's just temporarily unable to enforce the block until apples are restored.</p>
 
         <h3>What happens if I go too long without feeding?</h3>
-        <p>If you go more than <strong>24 hours without feeding</strong>, your streak resets to 0 - even if you didn't technically break any individual app limit.</p>
+        <p>If you go more than 24 hours without feeding, your streak resets to 0 - even if you didn't technically break any individual app limit. There is an auto-feed setting in the Settings page available if you don't want to personally hit the feed button daily, however the auto-feed won't work for the day if you don't have enough apples stored. </p>
 
         <h3>How do I get more apples?</h3>
         <ul>
             <li><strong>Watch a short ad</strong> to earn an apple (limited number of ad-apples available in a rolling time window - check the in-app "Get More Apples" screen for the current limit and cooldown)</li>
-            <li><strong>Hit streak milestones</strong> (e.g., 7, 14, 21+ day streaks) to earn bonus apples automatically</li>
+            <li><strong>Hit streak milestones</strong> (e.g., 7, 14, 21 day streaks) to earn bonus apples automatically</li>
             <li><strong>Subscribe to Premium</strong> for unlimited apples - helpers feed themselves automatically and you never have to think about this again</li>
         </ul>
 
@@ -158,14 +149,8 @@
             <li>Try force-closing and reopening PandaPaus once to resync</li>
         </ul>
 
-        <h3>I changed my Daily Opens or Session Minutes but the old limit still seems active.</h3>
-        <p>Limit changes take effect the moment you tap <strong>Activate Shield</strong> in the app's edit screen. If it still looks off, fully close the target app (not just background it) and reopen it once - this forces the shield to re-read your latest settings.</p>
-
-        <h3>Why does the shield sometimes show a generic message instead of my custom one?</h3>
-        <p>This can briefly happen right after adding a brand-new shield, while the system finishes linking that specific app to your settings. It should resolve within a few seconds to a minute of normal use. If it persists, try the troubleshooting steps above.</p>
-
         <h3>I'm not getting the 30-second warning before my session ends.</h3>
-        <p>Make sure Notifications are enabled for PandaPaus in <strong>Settings &rarr; Preferences &rarr; Notifications</strong>, and that iOS Notification permissions are granted (Settings app &rarr; Notifications &rarr; PandaPaus).</p>
+        <p>Make sure Notifications are enabled for PandaPaus in Settings &rarr; Preferences &rarr; Notifications, and that iOS Notification permissions are granted (Settings app &rarr; Notifications &rarr; PandaPaus).</p>
     </section>
 
     <div class="contact-box">
