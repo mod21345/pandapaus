@@ -110,7 +110,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 8% 60px;
+  padding: 100px 8% 80px;
   gap: 48px;
 }
 
@@ -155,8 +155,8 @@
 
 .hero-badges {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   gap: 12px;
   margin-top: 36px;
   opacity: 0;
@@ -177,7 +177,9 @@
   font-family: 'Figtree', sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 0 16px;
+  padding: 0;
+width: 179px;
+justify-content: center;
   height: 52px;
   border-radius: 10px;
   border: none;
@@ -201,7 +203,7 @@
   gap: 14px;
   flex: 1;
   justify-content: center;
-  max-width: 480px;
+  max-width: 560px;
 }
 
 .screenshot-wrap {
@@ -348,23 +350,23 @@
 
     /* ── HONEST PITCH ── */
     .pitch-section {
-      background: var(--teal);
+      background: var(--teal-light);
       text-align: center;
     }
 
     .pitch-section .section-label {
-      color: rgba(255,255,255,0.6);
+      color: var(--teal);
     }
 
     .pitch-section .section-title {
-      color: var(--white);
+      color: var(--text-gray);
       max-width: 700px;
       margin: 0 auto;
     }
 
     .pitch-body {
       font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,0.8);
+      color: var(--light-gray);
       max-width: 620px;
       margin: 24px auto 0;
       line-height: 1.7;
@@ -488,7 +490,7 @@
     footer {
       padding: 2.5rem 8%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       font-size: 0.82rem;
       color: var(--light-gray);
@@ -531,7 +533,7 @@
 <section class="hero">
   <div class="hero-text">
     <h1 class="hero-title">PandaPaus</h1>
-    <p class="hero-tagline">Cute, has personality, no subscription needed.</p>
+    
     <p class="hero-paus">Paus the scroll.</p>
     <div class="hero-badges">
       <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" target="_blank" rel="noopener">
@@ -541,7 +543,7 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.16-.65-.06-.83.22l-1.88 3.24A10.3 10.3 0 0 0 12 8c-1.53 0-2.98.33-4.47.91L5.65 5.67c-.19-.28-.56-.38-.85-.22-.3.16-.42.54-.26.85L6.38 9.48C3.91 11.01 2.21 13.57 2 16.6h20c-.21-3.03-1.91-5.59-4.4-7.12zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
         </svg>
-        Android — Coming Soon
+        Android - Join the waitlist
       </button>
     </div>
   </div>
@@ -576,7 +578,7 @@
       <div class="step">
         <div class="step-number">3</div>
         <h3>Your streak builds</h3>
-        <p>Every day under your limit adds to your streak. The longer you go, the more you unlock - seasonal drops, hidden codes, limited backgrounds.</p>
+        <p>Every day under your limit adds to your streak. The longer you go, the more you can unlock as perks - seasonal drops, hidden codes, limited backgrounds, and more.</p>
       </div>
     </div>
   </section>
@@ -588,18 +590,18 @@
     <div class="features-grid">
       <div class="feature-card">
        <div class="feature-icon">✨</div>
-        <h3>No subscription. Ever.</h3>
-        <p>Protecting your attention shouldn't cost $/month. PandaPaus is free to use - no paywalls, no catch, no fine print.</p>
+        <h3>Free to use, always.</h3>
+        <p>Everything you need to build better habits is free. No subscription required.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
         <h3>Guards with personality</h3>
-        <p>Choose a tone - sassy, zen, guilt-tripping, encouraging. Your PandaPaus helpers say what you'd actually say to yourself.</p>
+        <p>Your helpers come with personality. Pick the tone that works and actually makes you put the phone down.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
         <h3>Streaks that keep you honest</h3>
-        <p>Day after day, your progress stacks up somewhere visible. Hard to ignore. Even harder to break.</p>
+        <p>Small wins, stacked daily. Turns out a number you can see is harder to ignore than one you can't.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
@@ -609,12 +611,12 @@
       <div class="feature-card">
        <div class="feature-icon">✨</div>
         <h3>Home screen widget</h3>
-        <p>Your apple count and streak, glanceable from your home screen. No need to open the app to stay on track.</p>
+        <p>Your apple count and streak, one glance away right on your home screen.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
         <h3>Clean and simple</h3>
-        <p>No bloat, no dashboards, no overwhelming graphs. PandaPaus gets out of the way and lets the habit do the work.</p>
+        <p>No dashboards, no graphs, no bloat. Set your limits, let your helpers do the rest.</p>
       </div>
     </div>
   </section>
@@ -632,7 +634,7 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.16-.65-.06-.83.22l-1.88 3.24A10.3 10.3 0 0 0 12 8c-1.53 0-2.98.33-4.47.91L5.65 5.67c-.19-.28-.56-.38-.85-.22-.3.16-.42.54-.26.85L6.38 9.48C3.91 11.01 2.21 13.57 2 16.6h20c-.21-3.03-1.91-5.59-4.4-7.12zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
         </svg>
-        Android — Coming Soon
+        Android - Join the waitlist
       </button>
     </div>
   </section>
