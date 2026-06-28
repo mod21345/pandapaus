@@ -109,7 +109,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 100px 8% 80px;
   gap: 48px;
 }
@@ -117,8 +117,9 @@
 .hero-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
+  width: 100%;
   flex: 1;
   min-width: 280px;
   max-width: 520px;
@@ -144,7 +145,7 @@
 }
 
 .hero-paus {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(2rem, 4vw, 2.4rem);
   font-weight: 600;
   color: var(--text-gray);
   margin-top: 6px;
@@ -203,7 +204,7 @@ justify-content: center;
   gap: 14px;
   flex: 1;
   justify-content: center;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .screenshot-wrap {
@@ -356,7 +357,14 @@ justify-content: center;
 
     .pitch-section .section-label {
       color: var(--teal);
+      
     }
+
+    .pitch-section .hero-badges {
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
 
     .pitch-section .section-title {
       color: var(--text-gray);
@@ -540,7 +548,7 @@ justify-content: center;
         <img src="/assets/appstore-badge.svg" alt="Download on the App Store" height="52" />
       </a>
       <button class="android-soon-btn" onclick="openWaitlist()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.16-.65-.06-.83.22l-1.88 3.24A10.3 10.3 0 0 0 12 8c-1.53 0-2.98.33-4.47.91L5.65 5.67c-.19-.28-.56-.38-.85-.22-.3.16-.42.54-.26.85L6.38 9.48C3.91 11.01 2.21 13.57 2 16.6h20c-.21-3.03-1.91-5.59-4.4-7.12zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
         </svg>
         <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.25;">
@@ -634,7 +642,7 @@ justify-content: center;
         <img src="/assets/appstore-badge.svg" alt="Download on the App Store" height="52" />
       </a>
       <button class="android-soon-btn" onclick="openWaitlist()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.16-.65-.06-.83.22l-1.88 3.24A10.3 10.3 0 0 0 12 8c-1.53 0-2.98.33-4.47.91L5.65 5.67c-.19-.28-.56-.38-.85-.22-.3.16-.42.54-.26.85L6.38 9.48C3.91 11.01 2.21 13.57 2 16.6h20c-.21-3.03-1.91-5.59-4.4-7.12zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
         </svg>
         <span style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.25;">
