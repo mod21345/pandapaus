@@ -4,19 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | PandaPaus</title>
+  <meta name="description" content="Get in touch with the PandaPaus team. Questions, feedback, bugs — send it over." />
+  <link rel="icon" type="image/png" href="/assets/finalapp2.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;800&display=swap" rel="stylesheet" />
   <style>
     :root {
       --teal:       #39a79e;
-      --dark-bg:    #0d1117;
+      --teal-light: #e8f6f5;
       --soft-white: #f9f9f9;
       --text-gray:  #393939;
+      --light-gray: #9a9a9a;
+      --white:      #ffffff;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    
+
     body {
       font-family: 'Figtree', sans-serif;
       background: var(--soft-white);
@@ -26,97 +30,307 @@
       flex-direction: column;
     }
 
-    /* Navbar CSS (Copied from Home Page for consistency) */
+    /* ── NAV ── */
     .navbar {
       width: 100%;
-      height: 80px;
+      height: 72px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 8%;
-      background-color: var(--teal);
+      background: var(--soft-white);
+      border-bottom: 1px solid rgba(57,167,158,0.12);
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    .logo {
-      color: var(--soft-white);
-      font-weight: 400;
-      font-size: 1.6rem;
-      letter-spacing: -0.02em;
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       text-decoration: none;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 30px;
+    .nav-logo img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      object-fit: cover;
     }
 
-    .nav-item {
-      color: var(--soft-white);
+    .nav-logo-text {
+      color: var(--teal);
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-link {
+      color: var(--teal);
       text-decoration: none;
       font-weight: 500;
-      font-size: 1rem;
-      opacity: 0.9;
+      font-size: 0.95rem;
+      opacity: 0.8;
       transition: opacity 0.2s;
     }
 
-    .nav-item:hover { opacity: 1; }
+    .nav-link:hover { opacity: 1; }
 
+    .nav-download {
+      background: var(--teal);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 9px 20px;
+      border-radius: 100px;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-download:hover { opacity: 0.85; }
+
+    /* ── MAIN ── */
     main {
       flex: 1;
-      text-align: center;
-      padding: 60px 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 80px 5% 100px;
     }
 
-    h1 {
-      color: var(--teal); /* Fixed: Now Azure Teal so it's visible */
-      font-size: 2.5rem;
-      margin-bottom: 30px;
+    .contact-wrap {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .contact-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 14px;
+    }
+
+    .contact-title {
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 800;
+      color: var(--text-gray);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 12px;
     }
 
-    .form-container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Adds a soft professional shadow */
+    .contact-sub {
+      font-size: 1rem;
+      color: var(--light-gray);
+      margin-bottom: 44px;
+      line-height: 1.5;
+    }
+
+    /* ── FORM ── */
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .form-field label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-gray);
+    }
+
+    .form-field input,
+    .form-field textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid rgba(57,167,158,0.25);
+      border-radius: 12px;
+      font-family: 'Figtree', sans-serif;
+      font-size: 0.97rem;
+      color: var(--text-gray);
+      background: var(--white);
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      border-color: var(--teal);
+    }
+
+    .form-field textarea {
+      resize: vertical;
+      min-height: 140px;
+      line-height: 1.5;
+    }
+
+    .form-submit {
+      width: 100%;
+      background: var(--teal);
+      color: var(--white);
+      border: none;
+      border-radius: 12px;
+      font-family: 'Figtree', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 15px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      margin-top: 6px;
+    }
+
+    .form-submit:hover { opacity: 0.85; }
+    .form-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .form-status {
+      margin-top: 16px;
+      font-size: 0.92rem;
+      min-height: 20px;
+      text-align: center;
+    }
+
+    .form-status.success { color: var(--teal); }
+    .form-status.error   { color: #e05c5c; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: var(--light-gray);
+      border-top: 1px solid rgba(57,167,158,0.1);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 520px) {
+      .navbar { padding: 0 5%; }
+      .form-row { grid-template-columns: 1fr; }
+      footer { padding: 2rem 5%; flex-direction: column; text-align: center; }
     }
   </style>
 </head>
 <body>
 
+  <!-- NAV -->
   <nav class="navbar">
-    <a href="/" class="logo">PandaPaus</a>
-    <div class="nav-links">
-      <a href="/" class="nav-item">Home</a>
-      <a href="/contact/" class="nav-item">Contact</a>
+    <a href="/" class="nav-logo">
+      <img src="/assets/finalapp2.png" alt="PandaPaus" />
+      <span class="nav-logo-text">PandaPaus</span>
+    </a>
+    <div class="nav-right">
+      <a href="/contact/" class="nav-link">Contact</a>
+      <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="nav-download" target="_blank" rel="noopener">Download</a>
     </div>
   </nav>
 
+  <!-- MAIN -->
   <main>
-    <h1>Contact Us</h1>
-    
-    <div class="form-container">
-      <!-- Height is increased to 950 to ensure the whole form shows without scrolling -->
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd8taGM9TwXnIxT1uelv5pjD0VlSHoZywNZeSpF_I3-bGJGuQ/viewform?embedded=true" 
-        width="100%" 
-        height="950" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
-        Loading…
-      </iframe>
+    <div class="contact-wrap">
+      <p class="contact-eyebrow">Get in touch</p>
+      <h1 class="contact-title">Say hi.</h1>
+      <p class="contact-sub">Questions, bugs, feedback, or your streak count — send it over.</p>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" placeholder="Your name" autocomplete="name" />
+        </div>
+        <div class="form-field">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" placeholder="your@email.com" autocomplete="email" />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="contactSubject">Subject</label>
+        <input type="text" id="contactSubject" placeholder="What's on your mind?" />
+      </div>
+
+      <div class="form-field">
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" placeholder="Tell us more…"></textarea>
+      </div>
+
+      <button class="form-submit" id="contactBtn" onclick="submitContact()">Send message</button>
+      <p class="form-status" id="contactStatus"></p>
     </div>
   </main>
 
-  <footer style="padding: 2rem; text-align: center; color: #9a9a9a; font-size: 0.8rem;">
-    &copy; 2026 PandaPaus
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 PandaPaus</span>
   </footer>
+
+  <script>
+    // ── Replace with your deployed Google Apps Script URL ──
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzciVdhyGwK6goK2Wn40uZ6Ixqmra9fJ1WFezC4AyqFDkcRLVHbwna7OeWO6ITELka0/exec";
+
+    async function submitContact() {
+      const name    = document.getElementById("contactName").value.trim();
+      const email   = document.getElementById("contactEmail").value.trim();
+      const subject = document.getElementById("contactSubject").value.trim();
+      const message = document.getElementById("contactMessage").value.trim();
+      const btn     = document.getElementById("contactBtn");
+      const status  = document.getElementById("contactStatus");
+
+      if (!name || !email || !subject || !message) {
+        status.textContent = "Please fill in all fields.";
+        status.className = "form-status error";
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = "Please enter a valid email address.";
+        status.className = "form-status error";
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+
+      try {
+        await fetch(SCRIPT_URL, {
+          method: "POST",
+          body: JSON.stringify({ type: "contact", name, email, subject, message }),
+        });
+        status.textContent = "Message sent!";
+        status.className = "form-status success";
+        btn.textContent = "Sent ✓";
+        document.getElementById("contactName").value = "";
+        document.getElementById("contactEmail").value = "";
+        document.getElementById("contactSubject").value = "";
+        document.getElementById("contactMessage").value = "";
+      } catch {
+        status.textContent = "Something went wrong. Try emailing contact@pandapaus.com directly.";
+        status.className = "form-status error";
+        btn.disabled = false;
+        btn.textContent = "Send message";
+      }
+    }
+  </script>
 
 </body>
 </html>
