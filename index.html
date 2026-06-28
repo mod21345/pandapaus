@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PandaPaus: Screen Time Control</title>
-  <meta name="description" content="PandaPaus is a free screen time control app for iPhone. Set daily limits on your most distracting apps, build streaks, and unlock collectibles — no subscription needed. Download on iOS." />
+  <meta name="description" content="PandaPaus is a free screen time control app for iPhone. Set daily limits on your most distracting apps, build streaks, and unlock collectibles - no subscription needed. Download on iOS." />
   <meta name="keywords" content="free screen time app, no subscription screen time, reduce phone addiction, mindful phone habits, app limit tracker iOS, digital wellbeing app free, stop doomscrolling, phone detox app" />
   <meta property="og:title" content="PandaPaus – Paus the Scroll" />
   <meta property="og:description" content="Free screen time control with personality. Set limits, build streaks, unlock collectibles. No subscription, ever." />
@@ -105,115 +105,143 @@
     .nav-download:hover { opacity: 0.85; }
 
     /* ── HERO ── */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 90px 8% 80px;
-    }
-
-    .hero-eyebrow {
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--teal);
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.1s forwards;
-    }
-
-    .hero-title {
-      font-size: clamp(3.2rem, 10vw, 7rem);
-      font-weight: 800;
-      color: var(--teal);
-      letter-spacing: -0.04em;
-      line-height: 0.95;
-      opacity: 0;
-      animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.2s forwards;
-    }
-
-    .hero-tagline {
-      font-size: clamp(1rem, 2.5vw, 1.3rem);
-      font-weight: 400;
-      color: var(--light-gray);
-      margin-top: 18px;
-      max-width: 480px;
-      opacity: 0;
-      animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
-    }
-
-    .hero-paus {
-      font-size: clamp(1.1rem, 3vw, 1.5rem);
-      font-weight: 600;
-      color: var(--text-gray);
-      margin-top: 10px;
-      font-style: italic;
-      opacity: 0;
-      animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.45s forwards;
-    }
-
-    .hero-badges {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-      margin-top: 40px;
-      opacity: 0;
-      animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.55s forwards;
-    }
-
-    .hero-badges a img {
-      height: 52px;
-      display: block;
-    }
-
-    .android-soon-btn {
-  background: none;
-  border: 1.5px solid rgba(57,167,158,0.4);
-  color: var(--light-gray);
-  font-family: 'Figtree', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 10px 22px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
-  letter-spacing: 0.01em;
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8% 60px;
+  gap: 48px;
 }
-.android-soon-btn:hover {
-  border-color: var(--teal);
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  min-width: 280px;
+  max-width: 520px;
+}
+
+.hero-title {
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  font-weight: 800;
   color: var(--teal);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.2s forwards;
 }
 
-    /* ── SCREENSHOTS ── */
-    .screenshots {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 20px;
-      padding: 60px 8% 80px;
-      flex-wrap: wrap;
-    }
+.hero-tagline {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 400;
+  color: var(--light-gray);
+  margin-top: 16px;
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
+}
 
-    .screenshot-wrap {
-      flex: 1;
-      min-width: 180px;
-      max-width: 240px;
-    }
+.hero-paus {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
+  color: var(--text-gray);
+  margin-top: 6px;
+  font-style: italic;
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.45s forwards;
+}
 
-    .screenshot-wrap img {
-      width: 100%;
-      border-radius: 28px;
-      display: block;
-      box-shadow: 0 20px 50px rgba(57,167,158,0.15), 0 4px 16px rgba(0,0,0,0.06);
-    }
+.hero-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 36px;
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.55s forwards;
+}
 
-    .screenshot-wrap:nth-child(2) img {
-      transform: scale(1.05);
-      box-shadow: 0 28px 60px rgba(57,167,158,0.22), 0 6px 20px rgba(0,0,0,0.08);
-    }
+.hero-badges a img {
+  height: 52px;
+  display: block;
+}
+
+.android-soon-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #000;
+  color: #fff;
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0 16px;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.android-soon-btn svg {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.android-soon-btn:hover { opacity: 0.82; }
+
+/* ── HERO SCREENSHOTS ── */
+.hero-screenshots {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  flex: 1;
+  justify-content: center;
+  max-width: 480px;
+}
+
+.screenshot-wrap {
+  flex: 1;
+}
+
+.screenshot-wrap img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 20px 50px rgba(57,167,158,0.15), 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.screenshot-center img {
+  transform: scale(1.06);
+  box-shadow: 0 28px 60px rgba(57,167,158,0.22), 0 6px 20px rgba(0,0,0,0.09);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 5% 50px;
+    text-align: center;
+  }
+  .hero-text {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero-badges {
+    align-items: center;
+  }
+  .hero-screenshots {
+    max-width: 100%;
+  }
+  .screenshot-center img {
+    transform: none;
+  }
+}
 
     /* ── SECTIONS ── */
     .section {
@@ -499,35 +527,36 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    
+  <!-- HERO + SCREENSHOTS -->
+<section class="hero">
+  <div class="hero-text">
     <h1 class="hero-title">PandaPaus</h1>
     <p class="hero-tagline">Cute, has personality, no subscription needed.</p>
     <p class="hero-paus">Paus the scroll.</p>
-
     <div class="hero-badges">
       <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" target="_blank" rel="noopener">
-        <img src="/assets/appstore-badge.svg" alt="Download on the App Store" />
+        <img src="/assets/appstore-badge.svg" alt="Download on the App Store" height="52" />
       </a>
       <button class="android-soon-btn" onclick="openWaitlist()">
-  Android - Coming Soon, Join the Waitlist
-</button>
-    </div>
-  </section>
-
-  <!-- SCREENSHOTS -->
-  <div class="screenshots">
-    <div class="screenshot-wrap">
-      <img src="/assets/View1.png"/>
-    </div>
-    <div class="screenshot-wrap">
-      <img src="/assets/View2.png"/>
-    </div>
-    <div class="screenshot-wrap">
-      <img src="/assets/View3.png"/>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.16-.65-.06-.83.22l-1.88 3.24A10.3 10.3 0 0 0 12 8c-1.53 0-2.98.33-4.47.91L5.65 5.67c-.19-.28-.56-.38-.85-.22-.3.16-.42.54-.26.85L6.38 9.48C3.91 11.01 2.21 13.57 2 16.6h20c-.21-3.03-1.91-5.59-4.4-7.12zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg>
+        Android — Coming Soon
+      </button>
     </div>
   </div>
+  <div class="hero-screenshots">
+    <div class="screenshot-wrap">
+      <img src="/assets/View1.png" alt="PandaPaus app showing daily limit settings" />
+    </div>
+    <div class="screenshot-wrap screenshot-center">
+      <img src="/assets/View2.png" alt="PandaPaus helper stepping in at your limit" />
+    </div>
+    <div class="screenshot-wrap">
+      <img src="/assets/View3.png" alt="PandaPaus streak and collectibles" />
+    </div>
+  </div>
+</section>
 
   <!-- HOW IT WORKS -->
   <section class="section how-section">
@@ -542,12 +571,12 @@
       <div class="step">
         <div class="step-number">2</div>
         <h3>Your helpers step in</h3>
-        <p>Hit your limit and a message appears. Warm, sassy, zen, or quietly devastating — you pick the tone. It's a nudge that actually lands.</p>
+        <p>Hit your limit and a message appears. Warm, sassy, zen, or quietly devastating - you pick the tone. It's a nudge that actually lands.</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
         <h3>Your streak builds</h3>
-        <p>Every day under your limit adds to your streak. The longer you go, the more you unlock — seasonal drops, hidden codes, limited backgrounds.</p>
+        <p>Every day under your limit adds to your streak. The longer you go, the more you unlock - seasonal drops, hidden codes, limited backgrounds.</p>
       </div>
     </div>
   </section>
@@ -560,12 +589,12 @@
       <div class="feature-card">
        <div class="feature-icon">✨</div>
         <h3>No subscription. Ever.</h3>
-        <p>Protecting your attention shouldn't cost $/month. PandaPaus is free to use — no paywalls, no catch, no fine print.</p>
+        <p>Protecting your attention shouldn't cost $/month. PandaPaus is free to use - no paywalls, no catch, no fine print.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
         <h3>Guards with personality</h3>
-        <p>Choose a tone — sassy, zen, guilt-tripping, encouraging. Your PandaPaus helpers say what you'd actually say to yourself.</p>
+        <p>Choose a tone - sassy, zen, guilt-tripping, encouraging. Your PandaPaus helpers say what you'd actually say to yourself.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">✨</div>
@@ -594,7 +623,7 @@
   <section class="section pitch-section">
     
     <h2 class="section-title">It's not your fault. But it is your problem.</h2>
-    <p class="pitch-body">Social media companies spent billions engineering the exact psychological triggers that keep you on your phone. PandaPaus doesn't lecture you about it — it just adds a speed bump. A small, cute, slightly guilt-tripping speed bump that builds a streak you'll actually want to protect. No subscription required to take back your attention.</p>
+    <p class="pitch-body">Social media companies spent billions engineering the exact psychological triggers that keep you on your phone. PandaPaus doesn't lecture you about it - it just adds a speed bump. A small, cute, slightly guilt-tripping speed bump that builds a streak you'll actually want to protect. No subscription required to take back your attention.</p>
     <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="pitch-cta" target="_blank" rel="noopener">Download free on iOS</a>
   </section>
 
@@ -616,7 +645,7 @@
         placeholder="your@email.com"
         autocomplete="email"
       />
-      <button class="modal-submit" id="waitlistBtn" onclick="submitWaitlist()">Notify me</button>
+      <button class="modal-submit" id="waitlistBtn" onclick="submitWaitlist()">Add me to the waitlist</button>
       <p class="modal-message" id="waitlistMsg"></p>
     </div>
   </div>
