@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PandaPaus – Cute, Has Personality, No Subscription Needed</title>
+  <title>PandaPaus: Screen Time Control</title>
   <meta name="description" content="PandaPaus is a free screen time control app for iPhone. Set daily limits on your most distracting apps, build streaks, and unlock collectibles — no subscription needed. Download on iOS." />
   <meta name="keywords" content="free screen time app, no subscription screen time, reduce phone addiction, mindful phone habits, app limit tracker iOS, digital wellbeing app free, stop doomscrolling, phone detox app" />
   <meta property="og:title" content="PandaPaus – Paus the Scroll" />
@@ -170,25 +170,22 @@
     }
 
     .android-soon-btn {
-      background: none;
-      border: 1.5px solid var(--teal);
-      color: var(--teal);
-      font-family: 'Figtree', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 11px 22px;
-      border-radius: 100px;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .android-soon-btn:hover {
-      background: var(--teal);
-      color: var(--white);
-    }
+  background: none;
+  border: 1.5px solid rgba(57,167,158,0.4);
+  color: var(--light-gray);
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  letter-spacing: 0.01em;
+}
+.android-soon-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
 
     /* ── SCREENSHOTS ── */
     .screenshots {
@@ -498,7 +495,7 @@
     </a>
     <div class="nav-right">
       <a href="/contact/" class="nav-link">Contact</a>
-      <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="nav-download" target="_blank" rel="noopener">Download</a>
+      <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="nav-download" target="_blank" rel="noopener">Download PandaPaus</a>
     </div>
   </nav>
 
@@ -514,9 +511,8 @@
         <img src="/assets/appstore-badge.svg" alt="Download on the App Store" />
       </a>
       <button class="android-soon-btn" onclick="openWaitlist()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341 14.3 12.12l3.223-3.222a.75.75 0 0 0-1.06-1.06L13.24 11.06 10.76 8.578a.75.75 0 0 0-1.06 1.06l2.478 2.479-3.196 3.196a.75.75 0 1 0 1.06 1.06l3.197-3.196 3.222 3.222a.75.75 0 0 0 1.062-1.058z"/></svg>
-        Coming soon on Android — join the waitlist
-      </button>
+  Android - Coming Soon, Join the Waitlist
+</button>
     </div>
   </section>
 
@@ -562,27 +558,27 @@
     <h2 class="section-title">Everything you need. Nothing you don't.</h2>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon">🚫</div>
+       <div class="feature-icon">✨</div>
         <h3>No subscription. Ever.</h3>
         <p>Protecting your attention shouldn't cost $/month. PandaPaus is free to use — no paywalls, no catch, no fine print.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🗣️</div>
+        <div class="feature-icon">✨</div>
         <h3>Guards with personality</h3>
         <p>Choose a tone — sassy, zen, guilt-tripping, encouraging. Your PandaPaus helpers say what you'd actually say to yourself.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🔥</div>
+        <div class="feature-icon">✨</div>
         <h3>Streaks that keep you honest</h3>
         <p>Day after day, your progress stacks up somewhere visible. Hard to ignore. Even harder to break.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🎨</div>
-        <h3>Collectibles worth earning</h3>
-        <p>Seasonal backgrounds, limited drops, hidden codes, and community unlocks. There's always something new to find for the ones who go deeper.</p>
+        <div class="feature-icon">✨</div>
+        <h3>Cute Collectible Backgrounds</h3>
+        <p>Seasonal backgrounds, limited drops, hidden codes, and community unlocks. Just something to find for the ones who stick with it.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📱</div>
+       <div class="feature-icon">✨</div>
         <h3>Home screen widget</h3>
         <p>Your apple count and streak, glanceable from your home screen. No need to open the app to stay on track.</p>
       </div>
@@ -596,7 +592,7 @@
 
   <!-- HONEST PITCH -->
   <section class="section pitch-section">
-    <p class="section-label">The honest pitch</p>
+    
     <h2 class="section-title">It's not your fault. But it is your problem.</h2>
     <p class="pitch-body">Social media companies spent billions engineering the exact psychological triggers that keep you on your phone. PandaPaus doesn't lecture you about it — it just adds a speed bump. A small, cute, slightly guilt-tripping speed bump that builds a streak you'll actually want to protect. No subscription required to take back your attention.</p>
     <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="pitch-cta" target="_blank" rel="noopener">Download free on iOS</a>
@@ -627,7 +623,7 @@
 
   <script>
     // ── Replace with your deployed Google Apps Script URL ──
-    const SCRIPT_URL = "https://docs.google.com/spreadsheets/d/1tpqCo-ePVU0BAsyLCH8Rnx4mQru4vR8y1aI63fumYOs/edit?gid=0#gid=0";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzciVdhyGwK6goK2Wn40uZ6Ixqmra9fJ1WFezC4AyqFDkcRLVHbwna7OeWO6ITELka0/exec";
 
     function openWaitlist() {
       document.getElementById("waitlistModal").classList.add("open");
