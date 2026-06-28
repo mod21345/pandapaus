@@ -733,17 +733,7 @@ justify-content: center;
     </div>
   </div>
 
-  function toggleNav() {
-  document.getElementById("navRight").classList.toggle("open");
-}
-
-document.addEventListener("click", function(e) {
-  const nav = document.getElementById("navRight");
-  const btn = document.getElementById("navHamburger");
-  if (!nav.contains(e.target) && !btn.contains(e.target)) {
-    nav.classList.remove("open");
-  }
-});
+ 
   <script>
     // ── Replace with your deployed Google Apps Script URL ──
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzciVdhyGwK6goK2Wn40uZ6Ixqmra9fJ1WFezC4AyqFDkcRLVHbwna7OeWO6ITELka0/exec";
