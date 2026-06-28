@@ -585,7 +585,7 @@ justify-content: center;
   </a>
   <div class="nav-right" id="navRight">
     <a href="/contact/" class="nav-link">Contact</a>
-    <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="nav-download" target="_blank" rel="noopener">Download</a>
+    <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="nav-download" target="_blank" rel="noopener">Download PandaPaus</a>
   </div>
   <button class="nav-hamburger" id="navHamburger" onclick="toggleNav()" aria-label="Menu">
     <span></span>
@@ -768,6 +768,18 @@ document.addEventListener("click", function(e) {
       if (e.key === "Escape") closeWaitlist();
     });
 
+    function toggleNav() {
+  document.getElementById("navRight").classList.toggle("open");
+}
+
+document.addEventListener("click", function(e) {
+  const nav = document.getElementById("navRight");
+  const btn = document.getElementById("navHamburger");
+  if (!nav.contains(e.target) && !btn.contains(e.target)) {
+    nav.classList.remove("open");
+  }
+});
+
     async function submitWaitlist() {
       const email = document.getElementById("waitlistEmail").value.trim();
       const btn   = document.getElementById("waitlistBtn");
@@ -798,17 +810,7 @@ document.addEventListener("click", function(e) {
       }
     }
 
-    function toggleNav() {
-  document.getElementById("navRight").classList.toggle("open");
-}
-
-document.addEventListener("click", function(e) {
-  const nav = document.getElementById("navRight");
-  const btn = document.getElementById("navHamburger");
-  if (!nav.contains(e.target) && !btn.contains(e.target)) {
-    nav.classList.remove("open");
-  }
-});
+    
     
   </script>
 
