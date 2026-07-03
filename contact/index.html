@@ -266,22 +266,6 @@
 
     /* ── FOOTER ── */
     footer {
-      padding: 2rem 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.82rem;
-      color: var(--light-gray);
-      border-top: 1px solid rgba(57,167,158,0.1);
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 520px) {
-      .navbar { padding: 0 5%; }
-      .form-row { grid-template-columns: 1fr; }
-      footer {
       padding: 2.5rem 8%;
       display: flex;
       justify-content: center;
@@ -292,7 +276,13 @@
       flex-wrap: wrap;
       gap: 10px;
     }
+
+    @media (max-width: 600px) {
+      .navbar { padding: 0 5%; }
+      .waitlist-card { padding: 40px 28px; }
+      footer { padding: 2rem 5%; flex-direction: column; text-align: center; }
     }
+    
   </style>
 </head>
 <body>
