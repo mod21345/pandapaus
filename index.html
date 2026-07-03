@@ -584,6 +584,7 @@ justify-content: center;
     <span class="nav-logo-text">PandaPaus</span>
   </a>
   <div class="nav-right" id="navRight">
+    <a href="/android-waitlist/" class="nav-link">Android Waitlist</a>
     <a href="/contact/" class="nav-link">Contact</a>
     <a href="https://apps.apple.com/us/app/pandapaus-screen-time-control/id6760516623" class="nav-download" target="_blank" rel="noopener">Download PandaPaus</a>
   </div>
@@ -787,7 +788,7 @@ document.addEventListener("click", function(e) {
       try {
         await fetch(SCRIPT_URL, {
           method: "POST",
-          body: JSON.stringify({ type: "waitlist", email }),
+          body: JSON.stringify({ type: "android_waitlist", email }),
         });
         msg.textContent = "You're on the list. We'll be in touch!";
         msg.className = "modal-message success";
